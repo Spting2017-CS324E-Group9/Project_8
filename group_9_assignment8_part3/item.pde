@@ -72,24 +72,31 @@ class item {
       textSize (15); 
       if (has_media) {
         text (this.title, this.img.width + 10, vert + 20);
+
       } else {
         text (this.title, 10, vert + 20);
+
       }
     }
     if (has_description) {
       if (this.i_box.in_box (mouseX, mouseY)) {
-        fill (30); 
-        textAlign (LEFT); 
-        textSize (12); 
+        fill (30);
         if (has_media) {
-        text (this.description, this.img.width + 10, vert + 40);
+          rectMode(CORNERS);
+          textAlign (LEFT);        
+          textSize (12);
+          text (this.description, this.img.width + 10, vert + 40, width,vert+i_height);
+          
         } 
         else {
           fill (30); 
-          textAlign (LEFT); 
+          rectMode(CORNERS);
+          textAlign(LEFT);
           textSize (12);
-          text (this.description, 10, vert + 40);
+          text (this.description, 10, vert + 40, width, vert+i_height);
         }
+        rectMode(CORNER);
+        textAlign(LEFT);
       }
     }
     
