@@ -32,7 +32,7 @@ void mouseClicked () {
   }
   
   for (int i = 0; i < RSSreader.channels[RSSreader.current_channel].num_items; i++) {
-    if ((RSSreader.channels[RSSreader.current_channel].items[i].i_box.in_box (mouseX, mouseY)) && (!RSSreader.near_left) && (!RSSreader.near_right) && (!RSSreader.near_header) && (!RSSreader.near_footer)) {
+    if ((RSSreader.channels[RSSreader.current_channel].items[i].i_box.in_box (mouseX, mouseY)) && (!RSSreader.near_left) && (!RSSreader.near_right) && (!RSSreader.near_header) && (!RSSreader.near_footer) && (!RSSreader.view_settings)) {
       link (RSSreader.channels[RSSreader.current_channel].items[i].link);
     }
   }
