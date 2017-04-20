@@ -10,10 +10,10 @@ class settings {
     light_background = false;
     display_box = new box (0, 300, 400, 470, 255, 0, true);
     
-    show_both_button = new button (50, 330);
-    show_none_button = new button (100, 330); 
-    show_title_button = new button (150, 330);
-    show_thumbnail_button = new button (200, 330);
+    show_both_button = new button (100, 350);
+    show_none_button = new button (160, 350); 
+    show_title_button = new button (220, 350);
+    show_thumbnail_button = new button (280, 350);
   
   }
   
@@ -29,7 +29,7 @@ class settings {
       fill (150);
     }
     text ("Settings", 5, 320);
-    text ("Display: ", 5, 330);
+    text ("Display: ", 5, 350);
     show_both_button.display ();
     show_none_button.display ();
     show_title_button.display ();
