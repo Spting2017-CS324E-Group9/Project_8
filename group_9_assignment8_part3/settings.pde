@@ -5,7 +5,7 @@ class settings {
   boolean[] show_imgs;
   
   settings () {
-    show_imgs = {true, false, false, false};
+    //show_imgs = {true, false, false, false};
     light_background = false;
     display_box = new box (0, 300, 400, 470, 255, 0, true);
   
