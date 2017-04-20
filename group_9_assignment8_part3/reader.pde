@@ -65,7 +65,15 @@ class reader {
       reader_settings.light_background = channels[current_channel].light_background;
       reader_settings.display (channels[current_channel].channel_color);
     }
-    
+    if (right_arrow_box.in_box (mouseX, mouseY)) {
+      near_right = true;
+    }
+    else {
+      near_right = false;
+    }
+    if (left_arrow_box.in_box (mouseX, mouseY)) {
+      near_left = true;
+    }
     else {
       near_left = false;
     }

@@ -4,12 +4,12 @@ reader RSSreader;
 void setup () {
   size (1000, 800);
   
-  //channel_1_source = "http://feeds.bbci.co.uk/news/rss.xml?edition=uk";
-  //channel_2_source = "http://feeds.bbci.co.uk/news/video_and_audio/technology/rss.xml?edition=uk";
+  channel_1_source = "http://feeds.bbci.co.uk/news/rss.xml?edition=uk";
+  channel_2_source = "http://feeds.bbci.co.uk/news/video_and_audio/technology/rss.xml?edition=uk";
   channel_3_source = "https://comicbookrealm.com/rss/previews";
-  //channel_4_source = "http://news.nationalgeographic.com/index.rss";
-  //channel_5_source = "https://www.dwell.com/@dwell/rss";
-  String[] source_list = {channel_3_source};
+  channel_4_source = "http://news.nationalgeographic.com/index.rss";
+  channel_5_source = "https://www.dwell.com/@dwell/rss";
+  String[] source_list = {channel_1_source, channel_2_source, channel_3_source, channel_4_source, channel_5_source};
   RSSreader = new reader (source_list);
   
 }
