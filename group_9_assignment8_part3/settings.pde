@@ -11,14 +11,14 @@ class settings {
     display_box = new box (0, 300, 400, 470, 255, 0, true);
     
     show_both_button = new button (100, 350);
-    show_none_button = new button (160, 350); 
-    show_title_button = new button (220, 350);
-    show_thumbnail_button = new button (280, 350);
+    show_none_button = new button (100, 450); 
+    show_title_button = new button (100, 550);
+    show_thumbnail_button = new button (100, 650);
     
     show_both_box = new box (90, 340, 20, 20, 0, 255, false);
-    show_none_box = new box (150, 340, 20, 20, 0, 255, false);
-    show_title_box = new box (210, 340, 20, 20, 0, 255, false);
-    show_thumbnail_box = new box (270, 340, 20, 20, 0, 255, false);
+    show_none_box = new box (90, 440, 20, 20, 0, 255, false);
+    show_title_box = new box (90, 540, 20, 20, 0, 255, false);
+    show_thumbnail_box = new box (90, 640, 20, 20, 0, 255, false);
   
   }
   
