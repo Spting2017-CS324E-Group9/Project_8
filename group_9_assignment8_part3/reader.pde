@@ -96,9 +96,9 @@ class reader {
     else {
       near_settings = false;
     }
-    channels[current_channel].has_image = reader_settings.show_title_img;
+    channels[current_channel].show_title = reader_settings.show_title_img;
     for (int i = 0; i < channels[current_channel].num_items; i++) {
-      channels[current_channel].items[i].has_media = reader_settings.show_thumbnail;
+      channels[current_channel].items[i].show_media = reader_settings.show_thumbnail;
     }
   }
   

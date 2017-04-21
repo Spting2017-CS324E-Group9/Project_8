@@ -2,7 +2,7 @@ class item {
 
   XML data;
   String title, description, link, media, pub_date;
-  boolean has_title, has_description, has_link, has_media, has_pub_date;
+  boolean has_title, has_description, has_link, has_media, has_pub_date, show_media;
   box i_box;
   int vert, i_height;
   PImage img;
@@ -10,6 +10,7 @@ class item {
   item (XML source, int vertical_place, int ih) {
     vert = vertical_place;
     i_height = ih;
+    show_media = true;
 
     data = source;
 
@@ -70,7 +71,7 @@ class item {
       fill (0); 
       textAlign (LEFT); 
       textSize (15); 
-      if (has_media) {
+      if ((this.has_media) && (this.show_media)) {
         text (this.title, this.img.width + 10, vert + 20);
 
       } else {
