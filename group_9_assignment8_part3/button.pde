@@ -12,9 +12,12 @@ class button {
     PShape on_out_circ = createShape (ELLIPSE, x, y, 20, 20);
     on_out_circ.setFill (0);
     PShape on_mid_circ = createShape (ELLIPSE, x, y, 15, 15);
-    on_mid_circ.setFill (0);
+    on_mid_circ.setFill (200);
+    PShape on_mid_circ_2 = createShape (ELLIPSE, x, y, 5, 5);
+    on_mid_circ_2.setFill (0);
     on.addChild (on_out_circ);
     on.addChild (on_mid_circ);
+    on.addChild (on_mid_circ_2);
     
     off = createShape (GROUP);
     PShape off_out_circ = createShape (ELLIPSE, x, y, 20, 20);
