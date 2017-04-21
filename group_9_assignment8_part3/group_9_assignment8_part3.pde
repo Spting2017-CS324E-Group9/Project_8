@@ -39,6 +39,9 @@ void mouseClicked () {
   if (RSSreader.near_settings) {
     RSSreader.view_settings = !RSSreader.view_settings;
   }
+  if (RSSreader.view_settings) {
+   RSSreader.reader_settings.update_settings ();
+  }
 }
 
 void mouseWheel(MouseEvent event) {

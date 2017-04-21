@@ -7,7 +7,7 @@ class channel {
   item[] items;
   int item_height, num_items;
   box header_box, footer_box;
-  boolean light_background; 
+  boolean light_background, show_title, show_thumbnail; 
   
   // image variables
   boolean has_image, has_link, has_copyright, has_build_date;
@@ -81,6 +81,9 @@ class channel {
     else {
       light_background = true;
     }
+    
+    show_title = true;
+    show_thumbnail = true;
   }
   
   void display () {
