@@ -35,6 +35,10 @@ class settings {
     }
     text ("Settings", 5, 320);
     text ("Display: ", 5, 350);
+    text ("Show both title image and thumbnails", 115, 355);
+    text ("Show neither", 115, 455);
+    text ("Show title image only", 115, 555);
+    text ("Show thumbnails only", 115, 655);
     show_both_button.display ();
     show_none_button.display ();
     show_title_button.display ();
