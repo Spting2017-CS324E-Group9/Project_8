@@ -45,18 +45,34 @@ class settings {
     if (show_both_box.in_box (mouseX, mouseY)) {
       show_title_img = true;
       show_thumbnail = true;
+      show_both_button.is_on = true;
+      show_none_button.is_on = false;
+      show_title_button.is_on = false;
+      show_thumbnail_button.is_on = false;
     }
     else if (show_none_box.in_box (mouseX, mouseY)) {
       show_title_img = false;
       show_thumbnail = false;
+      show_both_button.is_on = false;
+      show_none_button.is_on = true;
+      show_title_button.is_on = false;
+      show_thumbnail_button.is_on = false;
     }
     else if (show_title_box.in_box (mouseX, mouseY)) {
       show_title_img = true;
       show_thumbnail = false;
+      show_both_button.is_on = false;
+      show_none_button.is_on = false;
+      show_title_button.is_on = true;
+      show_thumbnail_button.is_on = false;
     }
     else if (show_thumbnail_box.in_box (mouseX, mouseY)) {
       show_title_img = false;
       show_thumbnail = true;
+      show_both_button.is_on = false;
+      show_none_button.is_on = false;
+      show_title_button.is_on = false;
+      show_thumbnail_button.is_on = true;
     }
   }
 
