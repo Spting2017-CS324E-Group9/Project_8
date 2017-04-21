@@ -96,11 +96,13 @@ class channel {
     // header
     fill (channel_color);
     noStroke ();
-    rect (0, 0, width, this.img_height);
+    
     if ((this.has_image) && (this.show_title)) {
+      rect (0, 0, width, this.img_height);
       image (img, this.img_corner, 0);
     }
     else {
+      rect (0, 0, width, 60);
       fill (150);
       textAlign (CENTER);
       textSize (20);
