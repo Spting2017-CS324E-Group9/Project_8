@@ -7,7 +7,7 @@ class channel {
   item[] items;
   int item_height, num_items;
   box header_box, footer_box;
-  boolean light_background, show_title, show_thumbnail; 
+  boolean light_background, show_title; 
   
   // image variables
   boolean has_image, has_link, has_copyright, has_build_date;
@@ -83,7 +83,6 @@ class channel {
     }
     
     show_title = true;
-    show_thumbnail = true;
   }
   
   void display () {
@@ -97,11 +96,13 @@ class channel {
     // header
     fill (channel_color);
     noStroke ();
-    rect (0, 0, width, this.img_height);
-    if (this.has_image) {
+    
+    if ((this.has_image) && (this.show_title)) {
+      rect (0, 0, width, this.img_height);
       image (img, this.img_corner, 0);
     }
     else {
+      rect (0, 0, width, 60);
       fill (150);
       textAlign (CENTER);
       textSize (20);
